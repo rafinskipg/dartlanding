@@ -1,9 +1,8 @@
 {
   "name": "dartpresentation",
-  "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "~0.4.1",
+  "version": "0.0.1",
+  "dependencies": {
+     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
     "grunt-bower-install": "~0.7.0",
     "grunt-concurrent": "~0.4.1",
@@ -30,6 +29,9 @@
     "time-grunt": "~0.2.1",
     "grunt-cli": "^0.1.13",
     "bower": "^1.2.8"
+    },
+  "devDependencies": {
+   
   },
   "engines": {
     "node": ">=0.8.0"
