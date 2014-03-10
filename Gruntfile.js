@@ -368,7 +368,9 @@ module.exports = function (grunt) {
       'watch'
     ]);
   });
-
+  grunt.registerTask('heroku', function(){
+    grunt.task.run(['build', 'connect:dist:keepalive']);
+  });
   grunt.registerTask('server', function () {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
     grunt.task.run(['serve']);
