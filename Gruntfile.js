@@ -86,7 +86,7 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          hostname: 'dart-gdg.herokuapp.com',
+          hostname: 'localhost',
           base: '<%= yeoman.dist %>',
           port: process.env.PORT || 80
         }
