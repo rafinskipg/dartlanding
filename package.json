@@ -2,7 +2,12 @@
   "name": "dartpresentation",
   "version": "0.0.1",
   "dependencies": {
-     "grunt": "~0.4.1",
+  
+    "connect": "~2.12.0",
+     "gulp": "3.3.x"
+    },
+  "devDependencies": {
+      "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
     "grunt-bower-install": "~0.7.0",
     "grunt-concurrent": "~0.4.1",
@@ -28,18 +33,12 @@
     "load-grunt-tasks": "~0.2.0",
     "time-grunt": "~0.2.1",
     "grunt-cli": "^0.1.13",
-    "connect": "~2.12.0",
-     "gulp": "3.3.x",
     "bower": "^1.2.8"
-    },
-  "devDependencies": {
-   
   },
   "engines": {
     "node": ">=0.8.0"
   },
   "scripts": {
-    "start": "./node_modules/gulp/bin/gulp.js buildserver",
-    "postinstall": "echo postinstall time; ./node_modules/bower/bin/bower install;"
+    "start": "./node_modules/gulp/bin/gulp.js buildserver"
   }
 }
