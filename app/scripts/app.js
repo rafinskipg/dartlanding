@@ -15,6 +15,9 @@ angular.module('dartpresentationApp', [
         templateUrl: 'views/where.html',
         controller: 'WhereCtrl'
       })
+      .when('/program', {
+        templateUrl: 'views/program.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
