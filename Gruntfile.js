@@ -88,7 +88,7 @@ module.exports = function (grunt) {
         options: {
           hostname: 'localhost',
           base: '<%= yeoman.dist %>',
-          port: process.env.PORT || 80
+          port: process.env.PORT || 3000
         }
       }
     },
