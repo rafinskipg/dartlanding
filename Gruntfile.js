@@ -11,7 +11,7 @@ module.exports = function (grunt) {
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
-  //var http = require('http'),connect = require('connect');
+  var http = require('http'),connect = require('connect');
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
@@ -370,7 +370,10 @@ module.exports = function (grunt) {
     ]);
   });
   grunt.registerTask('buildserver', function(){
-    grunt.task.run(['connect:dist:keepalive']);
+    var app = connect()
+            .use(connect.static('dist'));
+
+    http.createServer(app).listen(process.env.PORT || 8888);
   });
   grunt.registerTask('server', function () {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
