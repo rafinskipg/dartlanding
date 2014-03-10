@@ -86,7 +86,7 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          hostname: 'localhost',
+          hostname: '0.0.0.0',
           base: '<%= yeoman.dist %>',
           port: process.env.PORT || 3000
         }
@@ -370,10 +370,7 @@ module.exports = function (grunt) {
     ]);
   });
   grunt.registerTask('buildserver', function(){
-    var app = connect()
-            .use(connect.static('dist'));
-
-    http.createServer(app).listen(process.env.PORT || 8888);
+    return grunt.task.run([ 'connect:dist:keepalive']);
   });
   grunt.registerTask('server', function () {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
