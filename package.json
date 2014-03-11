@@ -36,10 +36,10 @@
     "bower": "^1.2.8"
   },
   "engines": {
-    "node": ">=0.10.0"
+     "node": "0.10.x"
   },
   "scripts": {
     "start": "./node_modules/gulp/bin/gulp.js buildserver",
-    "postinstall": "npm update;"
+    "postinstall": "echo postinstall time;  ./node_modules/bower/bin/bower install;"
   }
 }
