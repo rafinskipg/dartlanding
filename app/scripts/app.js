@@ -9,14 +9,14 @@ angular.module('dartpresentationApp', [
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html'
+        templateUrl: 'views/main_es.html'
       })
       .when('/where', {
-        templateUrl: 'views/where.html',
+        templateUrl: 'views/where_es.html',
         controller: 'WhereCtrl'
       })
       .when('/program', {
-        templateUrl: 'views/program.html'
+        templateUrl: 'views/program_es.html'
       })
       .otherwise({
         redirectTo: '/'
