@@ -145,6 +145,16 @@ img{
 
 .program h3{
     text-align: center;
+    margin-top: 20px;
+}
+.program h2{
+    margin-top: 20px;
+}
+.twitterIcon {
+    background: url('../images/twitter.png');
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-size:20px;
 }
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
